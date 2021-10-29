@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98620abe39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_1.css">
+    <title>Netflix - Watch Tv Shows Online, Watch MOvies Online</title>
+</head>
+
+<body>
+    <!-- showcase(header) includes "Netflix-logo" and "sign-in" "text-h1 & p" and "watch free for 30 days-button" -->
+    <header class="showcase">
+        <!-- showcase-top content(logo-image,) -->
+        <div class="showcase-top">
+            <img src="image/logo.png" alt="Netflix">
+            <a href="#" class="btn btn-rounded">Sign In</a>
+        </div>
+        <!-- showcase-content(h1,p,a-link) -->
+        <div class="showcase-content">
+            <h1>See what's next</h1>
+            <p>Watch Anywhere. Cancel Anytime</p>
+            <a href="#" class="btn btn-xl">
+                Watch Free For 30 Days <i class="fa fa-chevron-right btn-icon"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- this section tab-icon, which include table-1(cancel anytime),table-2(watch anywhere),table-3(pick you price) -->
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel Anytime</p>
+            </div>
+
+            <div id="tab-2" class="tab-item tab-border">
+                <i class="fas fa-tablet-alt fa-3x"></i>
+                <p class="hide-sm">Watch Anywhere</p>
+            </div>
+
+            <div id="tab-3" class="tab-item tab-border">
+                <i class="fas fa-tags fa-3x"></i>
+                <p class="hide-sm">Pick Your Price</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contents of all the tables(table-1,table-2,table-3) -->
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab-content-1:contents first table-1 includes paragraph, button(watch free for 30days),and image(tab-content-1.png) -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
+                        </p>
+                        <a href="" class="btn btn-lg">Watch Free For 30 Days</a>
+                    </div>
+                    <img src="image/tab-content-1.png" alt="">
+                </div>
+            </div>
+            <!-- Tab-content-2: devides into top-content and bottom-content -->
+            <div id="tab-2-content" class="tab-content-item">
+                <!-- tab-2-content-top:contents paragraph,link(button)(watch free for 30 days) -->
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Watch Tv shows and movies anytime, anywhere - personalized for you.
+                    </p>
+                    <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+                </div>
+                <!-- tab-2-content-botton: 1st-division(includes image(tab-content-2-1),paragraphs), 2-nd-division(includes image(tab-content-2-2,paragraphs)), 3rd-division(includes image(tab-content-2-3),paragraphs) -->
+                <div class="tab-2-content-bottom">
+                    <div class="text-center">
+                        <img src="image/tab-content-2-1.png" alt="image-1">
+                        <p class="text-md">Watch on your Tv</p>
+                        <p class="text-dark">
+                            Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blue-ray players and more.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="image/tab-content-2-2.png" alt="image-1">
+                        <p class="text-md">Watch instantly or download for later</p>
+                        <p class="text-dark">
+                            Available on phone and tablet, wherever you go.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="image/tab-content-2-3.png" alt="image-1">
+                        <p class="text-md">Use any computer</p>
+                        <p class="text-dark">
+                            Watch right on Netflix.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tab-3-content: includes some texts and tabel of some rows and columns -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">Choose one plan and watch everything on Netflix.</p>
+                    <a href="#" class="btn btn-lg">Watch Free For 30 Days.</a>
+                </div>
+                <!-- Table includes some properties and some purchasing plans -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="hide">Properties</th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center_1">Monthly price after free month ends on 6/19/19</td>
+                            <td data-label="Basic">$8.99</td>
+                            <td data-label="Standard">$12.99</td>
+                            <td data-label="Premium">$15.99</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center_1">Hd Available</td>
+                            <td data-label="Basic"><i class="fas fa-times"></i></td>
+                            <td data-label="Standard"><i class="fas fa-check"></i></td>
+                            <td data-label="Premium"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center_1">Screen you can watch at the same time </td>
+                            <td data-label="Basic">1</td>
+                            <td data-label="Standard">2</td>
+                            <td data-label="Premium">4</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center_1">Watch on your laptop,TV,phone and tablet</td>
+                            <td data-label="Basic"><i class="fas fa-times"></i></td>
+                            <td data-label="Standard"><i class="fas fa-check"></i></td>
+                            <td data-label="Premium"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center_1">Cancel anytime</td>
+                            <td data-label="Basic"><i class="fas fa-times"></i></td>
+                            <td data-label="Standard"><i class="fas fa-check"></i></td>
+                            <td data-label="Premium"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center_1">First month free</td>
+                            <td data-label="Basic"><i class="fas fa-times"></i></td>
+                            <td data-label="Standard"><i class="fas fa-check"></i></td>
+                            <td data-label="Premium"><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer(last-most content) includes some options regarding(help,contact,legal-notice) -->
+    <footer class="footer">
+        <p>Questions Call 1-866-579-7172</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">By Gift Cards</a></li>
+                <li><a href="#">Cookies Perference</a></li>
+                <li><a href="#">Legal Notices</a></li>
+
+            </ul>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
