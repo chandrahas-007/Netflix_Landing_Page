@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0148)file:///C:/Users/Chandrahas/Desktop/web_development/my_project_2/learning%20notes/Javascript_learning/projects/pr_1_notes_taking_website/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes Apps</title>
+    <link href="./Notes Apps_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="file:///C:/Users/Chandrahas/Desktop/web_development/my_project_2/learning%20notes/Javascript_learning/projects/pr_1_notes_taking_website/index.html?#">Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="file:///C:/Users/Chandrahas/Desktop/web_development/my_project_2/learning%20notes/Javascript_learning/projects/pr_1_notes_taking_website/index.html?#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>Welcome to Magic Notes</h1>
+        <div class="card">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+                <div class="input-group">
+                    <textarea id="addTxt" class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add note</button>
+            </div>
+        </div>
+        <h1>Your Notes</h1>
+        <hr>
+        <!-- below class will be pop-up with help of javascript -->
+        <div id="notes" class="row container-fluid"><div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 1</h5>
+            <p class="card-text">this is note</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 2</h5>
+            <p class="card-text">this is note</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 3</h5>
+            <p class="card-text">jhjh</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 4</h5>
+            <p class="card-text">dsdd</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 5</h5>
+            <p class="card-text">fdff</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 6</h5>
+            <p class="card-text">sddad</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 7</h5>
+            <p class="card-text">ffd</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">Note 8</h5>
+            <p class="card-text">asdd</p>
+            <button href="#" class="btn btn-primary">Delete Note</button>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+    <script src="./Notes Apps_files/bootstrap.bundle.min.js.download" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./Notes Apps_files/popper.min.js.download" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./Notes Apps_files/bootstrap.min.js.download" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="./Notes Apps_files/index.js.download"></script>
+
+
+</body></html>

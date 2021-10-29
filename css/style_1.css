@@ -1,0 +1,411 @@
+/* set the global variable for color */
+:root{
+    --primary-color:#e50914;
+    --dark-color:#141414;
+    --text-color-table:#999;
+    --odd-color:#222;
+}
+
+/* reset the root */
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+/* some modification on body with respect to background and color and font-family and font-smoothing features */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    --webkit-font-smoothing:antialiased;
+    background: black;
+    color: grey;
+}
+
+/* it will remove the dots(left side) of all the unordered-list of footer */
+ul{
+    list-style: none;
+} 
+
+/* make h1-text(see what's next) as white */
+h1{
+    color: white;
+}
+
+/* make all a:link(text:white) and remove all the underlines beneath the a-tag(sign-in, all the watch free for 30 days) */
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* apply  vertical-margin to all the p-tag */
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* set a background-image to the showcase-class and set height just before the complete height of gadget because i wanna table-icons to be shown just beneath the background image*/
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url(../image/background.jpg) no-repeat center center/cover;
+}
+
+/* it will set black transparent background all above(z-index:1) the showcase */
+.showcase:after{
+    content:"";
+    /* parent is html */
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    /* it will generate the black-shadow all around the background */
+    box-shadow: inset 100px 100px 200px black, inset -100px -100px 200px black;
+
+}
+
+/* for showing (with z-index:2)image-logo and sign-in better ,cause z-index=1 of showcase:after which is just before the netflix-logo and sign-in*/
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+/* set the position of the netflix-logo  */
+.showcase-top img{
+    width: 150px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+/* set the sign-in button to the rightmost  */
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+/* for showing (z-index:2)text-content(h1,p,a-link) better ,cause z-index=1 of showcase:after(black transparent background*/
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+
+/* modification of h1(see what's next) */
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.1rem;
+    margin: 0 0 2rem;
+}
+/* modification on paragraph(Watch anywhere....) */
+.showcase-content p{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    margin: ;
+}
+
+
+/* set background and bottom-border for the table-icons */
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+/* manage all the tab-icons */
+.tabs .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* styling the text of tab-icon */
+.tabs p{
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+}
+/* managing the all the three tab-icons and text */
+.tab-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.1rem;
+}
+/* whenever we take the cursor to the icons it will show white color */
+.tab-item:hover{
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: inset 5px 5px 5px white;
+}
+/* set the red bottom-border to the icons */
+.tab-border{
+    border-bottom: 4px solid var(--primary-color);
+    border-radius: 3px;
+}
+
+
+/* let's start the content of table(section)*/
+.tab-content{
+   padding: 3rem 1rem;
+   background: #000;
+   color: white;
+}
+/* Hide content initially */
+#tab-1-content, #tab-2-content, #tab-3-content{
+   display: none;
+}
+/* for initially showing the first tab-content */
+.show{
+    display: block !important;
+}
+/* divide into two equal parts and centering the text,button and image of tab-content-1 */
+ #tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+} 
+/* managing (2:1)the (text:button) of tab-2-content-top */
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+/* all the 3-images(tab-2-content-bottom)are in equally  fractioned */
+#tab-2-content .tab-2-content-bottom{
+    margin: 1.5rem 1rem;
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+/* texts of above images are managed  */
+.text-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* table-3-content(tables) */
+.table{
+    width: 100%;
+    margin: 2rem 0;
+    /* it will remove the vertical border-line generated by n-child(odd)color */
+    border-collapse: collapse;
+}
+.table thead th{
+    text-transform: uppercase;
+    padding: 18px;
+}
+.table tbody tr td{
+    color:var(--text-color-table);
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+/* it will make all the left-text(properties) part of the table in the leftmost side */
+.table tbody tr td:first-child{
+    text-align: left;
+}
+/* it will generate colour on the table in odd manner */
+.table tbody tr:nth-child(odd){
+    background: var(--odd-color);
+}
+
+
+/* Footer */
+.footer{
+    max-width: 100%;
+    margin: 1rem 1rem;
+}
+.footer, .footer a{
+    color: var(--text-color-table);
+    font-size: 0.9rem;
+}
+.footer p{
+    margin: 1.5rem 0;
+}
+.footer .footer-cols{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer li{
+    line-height: 1.9;
+}
+
+/* utility classes */
+/* text */
+.text-lg{
+    font-size: 1.7rem;
+}
+.text-md{
+    font-size: 1.4rem;
+}
+.text-dark{
+    color: var(--text-color-table);
+}
+/* buttons */
+.btn{
+    display: inline-block;
+    background:var(--primary-color) ;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 3px 0 rgba(30, 9, 9, 0.5);
+    border-radius: 3px;
+}
+.btn:hover{
+    opacity: 0.9;
+    transition: 1s;
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+.btn-xl{
+    font-size: 1.3rem;
+    padding: 0.8rem 0.5rem;
+    margin-top: 1.1rem;
+}
+.btn-lg{
+    font-size:1rem ;
+    padding: 0.6rem 0.8rem;
+    text-transform: uppercase;
+    margin: 1.1rem;
+}
+
+
+
+/* For responsiveness */
+@media (max-width:960px) {
+    .showcase{
+        height: 70vh;
+    }
+    .showcase-top img{
+        position: absolute;
+        top: 44%;
+        left: 5%;
+    }
+    /* hiding the icon-text */
+    .hide-sm{
+        display: none;
+    }
+    .showcase-content h1{
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .showcase-content p{
+        font-size: 1.1rem;
+    }
+    .btn-xl{
+        font-size: 1.1rem;
+        padding:0.5rem 0.4rem ;
+    }
+    .btn-lg{
+        font-size: 0.8rem;
+        padding: 0.5rem 0.7rem;
+    }
+    .text-lg{
+        font-size: 1.1rem;
+    }
+    .text-md{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* for screen size:<=670px */
+@media (max-width:670px) {
+    /* for making background visible from the black blury */
+    .showcase::after{
+        box-shadow: inset 50px 50px 250px #000000, inset -50px -50px 250px #000000;
+    }
+    /* this will make table-1-content in stacked manner */
+    #tab-1-content .tab-1-content-inner{
+        grid-template-columns: 1fr;
+        text-align: center;
+        }
+    #tab-2-content .tab-2-content-top{
+            display: block;
+            text-align: center;
+        }   
+    #tab-2-content .tab-2-content-bottom{
+        grid-template-columns: 1fr ;  
+    }  
+    /* adjust the sign-in button */
+    .showcase-top a{
+        position: absolute;
+        right: 15px;
+    }
+    /* responsive table */
+    .table thead{
+        display: none;
+   }
+   .table, .table tbody, .table tr, .table td{
+       display: block;
+       width: 100%;
+   }
+   .table tr{
+       margin-bottom: 15px;
+
+   }
+   .table tbody tr td{
+       text-align: right;
+       padding-left: 50px;
+       padding-right: 10px;
+       position: relative;
+
+   }
+   .table td:before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       width: 50%;
+       padding-left: 15px;
+       font-weight: 600;
+       font-size: 14px;
+       text-align: left;
+
+   }
+   .table tbody tr td:first-child{
+       text-align: center;
+   }
+   .showcase-content{
+    height: 10vh;
+    }
+
+    .btn-xl{
+       padding:0.4rem 0.6rem;
+    }
+    .btn-lg{
+        padding:0.5rem 0.7rem;
+    }
+}
+
